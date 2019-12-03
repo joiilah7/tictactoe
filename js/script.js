@@ -2,8 +2,8 @@
 
 
 
-
-
+var playerMove = "O"
+var 
 
 $("#button1").click(function() {
     performLogic("#button1","#tile1");
