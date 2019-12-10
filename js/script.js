@@ -3,11 +3,27 @@
 
 
 var playerMove = "O"
-var 
+var totalTurns = 0 
+var gameEnd = false
+
+function performLogic (buttonId,titleId){
+    $(buttonId).remove();
+    $(titleId).text(playerMove);
+
+    if (playerMove == "O") {
+        playerMove = "X"
+    }
+    else{ 
+        playerMove = "O"
+    }
+}
+
+    
 
 $("#button1").click(function() {
     performLogic("#button1","#tile1");
 });
+ 
 
 $("#button2").click(function() {
     performLogic("#button2","#tile2");
